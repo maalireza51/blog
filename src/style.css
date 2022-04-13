@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #20232a;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+aside {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+li {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.post {
+    margin: 15px;
+    border-radius: 10px;
+    color: #007bec;
+    font-size: 2rem;
+}
+
+.comments {
+    color: #007bec;
+    margin: 20px;
+}
+
+.comment {
+    margin: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.post h1 {
+    text-align: center;
+}
+
+#root {
+    display: flex;
+    width: 100%;
+}
