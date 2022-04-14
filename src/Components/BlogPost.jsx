@@ -33,7 +33,7 @@ export default class BlogPost extends Component {
     render() {
         return (
             <>
-                <Sidebar posts={this.state.posts} handelChangeCurrentPost={this.handelChangeCurrentPost} />
+                <Sidebar posts={this.state.posts} handelChangeCurrentPost={this.handelChangeCurrentPost} active={this.state.currentPost}/>
                 {null != this.state.currentPost && <Content post={this.state.posts[this.state.currentPost]} />}
             </>
         )

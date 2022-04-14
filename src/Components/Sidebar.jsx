@@ -8,7 +8,8 @@ export default function Sidebar(props) {
             key={post.id}
             title={post.title}
             index={index}
-            handelClick={props.handelChangeCurrentPost} />) : null;
+            handelClick={props.handelChangeCurrentPost} 
+            active={props.active}/>) : null;
     return (
         <aside>
             <ul> 
