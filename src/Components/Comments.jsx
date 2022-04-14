@@ -1,18 +1,14 @@
 import React from 'react'
+import Comment from './Comment'
 
-export default function Comments() {
+export default function Comments(props) {
+    const comment = props.data.map(comment => {
+        return <Comment comment={comment.body}/>
+    })
     return (
         <div className="comments">
             <p>Comments:</p>
-            <div className="comment">
-                <p>Comment 1</p>
-            </div>
-            <div className="comment">
-                <p>Comment 2</p>
-            </div>
-            <div className="comment">
-                <p>Comment 3</p>
-            </div>
+            {comment}
         </div>
     )
 }
