@@ -29,7 +29,7 @@ export default class Content extends Component {
         if(prevprops.post.id !== this.props.post.id){
             this.setComment();
         }
-    }
+    } 
 
     render() {
         return (
