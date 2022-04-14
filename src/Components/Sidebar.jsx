@@ -11,7 +11,7 @@ export default function Sidebar(props) {
             handelClick={props.handelChangeCurrentPost} />) : null;
     return (
         <aside>
-            <ul>
+            <ul> 
                 {links}
             </ul>
 

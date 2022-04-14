@@ -25,7 +25,7 @@ export default class BlogPost extends Component {
         this.getPosts().then(posts => this.setState({ posts, currentPost: 0 }))
     }
 
-    handelChangeCurrentPost(index) {
+    handelChangeCurrentPost(e,index) {
         console.log(index);
         this.setState({ currentPost: index });
     }

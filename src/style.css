@@ -13,7 +13,28 @@ aside {
 
 li {
     cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    list-style: none;
     margin-top: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+li.active{
+    background-color:#999 ;
+}
+
+li:hover{
+    background-color: #555;
 }
 
 .container {
